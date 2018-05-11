@@ -1,0 +1,40 @@
+{
+  "name": "kubill/larapush",
+  "type": "library",
+  "description": "laravel pusher library",
+  "keywords": [
+    "library",
+    "push"
+  ],
+  "homepage": "https://github.com/kubill/larapush",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Kubill",
+      "email": "meiweijia@gmail.com"
+    }
+  ],
+  "require": {
+    "jpush/jpush": "^3.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Kubill\\LaraPush\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Kubill\\LaraPush\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Kubill\\LaraPush\\PusherServiceProvider"
+      ],
+      "aliases": {
+        "LaraPush": "Kubill\\LaraPush\\Facades\\Pusher"
+      }
+    }
+  }
+}
