@@ -33,6 +33,12 @@ And add the Pusher alias to `config/app.php`:
 'Pusher' => \Kubill\LaraPush\Facades\Pusher::class,
 ```
 
+Then run these commands to publish config：
+
+```bash
+php artisan vendor:publish --provider="Kubill\LaraPush\PusherServiceProvider"
+```
+
 Basic Usage
 -----------
 
